@@ -1,0 +1,4 @@
+///**** WSR ****////
+POWER : 0
+MODE : 3
+PAIRED : 1
