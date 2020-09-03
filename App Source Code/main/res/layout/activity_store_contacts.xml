@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFBFBF"
+    tools:context=".StoreContacts">
+
+
+    <TextView
+        android:id="@+id/tvinfo"
+        android:layout_width="357dp"
+        android:layout_height="79dp"
+        android:text="Store atleast 5 emergency contacts for your safety"
+        android:textColor="#4A0D0D"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <TextView
+        android:id="@+id/Contact"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:text="Contact : "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvinfo"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="245dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toEndOf="@+id/Contact"
+        app:layout_constraintTop_toBottomOf="@+id/tvinfo"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <Button
+        android:id="@+id/add_more"
+        android:layout_width="397dp"
+        android:layout_height="51dp"
+        android:text="submit and ADD MORE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Contact"
+        app:layout_constraintVertical_bias="0.215" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="391dp"
+        android:layout_height="45dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_more"
+        app:layout_constraintVertical_bias="0.11" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
